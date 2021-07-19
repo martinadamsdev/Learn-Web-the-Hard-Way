@@ -1,0 +1,18 @@
+.box {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+   }
+   
+   .item {
+       width: 200px;
+       height: 200px;
+       margin: 15px 15px;
+       background-color: rgb(128, 78, 78);
+   
+       text-align: center;
+       line-height: 200px;
+       color: red;
+       font-size: 50px;
+   }

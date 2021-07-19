@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #f1f1f1;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    width: 1200px;
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    width: 82px;
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    width: 1023px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav--left {
+    display: flex;
+    align-items: center;
+    width: 531px;
+}
+
+.nav--left div {
+    padding: 0 20px;
+}
+
+.nav--right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 420px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #F4F5F5;
+}
+
+.search-form input {
+    width: 130px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+}
+
+.search-form img {
+    cursor: pointer;
+}
+
+.creator {
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 24px;
+    padding: 5px 16px 5px 16px;
+    color: #1c78f0;
+    background-color: #e8f3ff;
+}
+
+.write {
+    width: 78px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #1E80FF;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    padding: 3.6px 20.4px;
+    align-items: center;
+    border: 1px solid #007FFF;
+    color: #007FFF;
+    text-align: center;
+    cursor: pointer;
+}
