@@ -55,7 +55,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/flex/juejin.html"
+            template: "./src/grid/demo.html"
         }),
         // 清理 dist 目录下的文件
         new CleanWebpackPlugin()

@@ -1,0 +1,127 @@
+:root {
+  --c-bg: hsl(0, 0%, 100%);
+  --c-text: hsl(0, 0%, 10%);
+  --c-text-alt: hsl(0, 0%, 10%);
+  --c-detail: hsl(0, 0%, 90%);
+  --f-family: "Inter", sans-serif;
+  --f-size: 15px;
+  --f-height: 24px;
+  --f-weight: 400;
+  --f-scale-s: 0.87;
+  --f-scale-m: 1.2;
+  --f-scale-l: 1.47;
+  --l-wide: 39rem;
+  --l-text: 25rem;
+  --a-speed: 150ms;
+  --a-ease: ease-out;
+  font-size: var(--f-height);
+  font-family: var(--f-family);
+  font-weight: var(--f-weight);
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-feature-settings: "tnum" 1, "case" 1, "ss01" 1, "ss03" 1;
+}
+
+*,
+::after,
+::before {
+  font-size: var(--f-size);
+  line-height: 1rem;
+  letter-spacing: -0.00879776em;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(9, auto);
+  /* grid-auto-flow: column; 容器的子元素会按照顺序排列顺序 */
+  /* grid-auto-flow: row; */
+  /* 水平方向的子元素对齐 */
+  /* justify-items: start; */
+  /* justify-items: center; */
+  /* justify-items: stretch; */
+  /* grid-auto-rows: 50px; */
+}
+
+figure,
+h1,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item-1 {
+  width: 750px;
+  height: 656px;
+  padding: 75px;
+}
+
+.thumbnail-info {
+  padding-top: 20px;
+}
+
+.thumbnail-link,
+.thumbnail-text a {
+  background-image: linear-gradient(
+    to right,
+    var(--c-text) 33.33333%,
+    var(--c-bg) 66.66666%
+  );
+  background-size: 300% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  transition: background-position 400ms var(--a-speed);
+}
+
+.thumbnail-link {
+  color: #333;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.thumbnail-text {
+  font-size: 15px;
+  color: gray;
+}
+
+.thumbnail-holder {
+  position: relative;
+  width: 100%;
+  display: block;
+  background: whitesmoke;
+}
+
+.thumbnail-holder:hover {
+  opacity: 0.9;
+}
+
+.thumbnail-link:hover,
+.thumbnail-text a:hover {
+  background-position: bottom left;
+}
+
+.item-2 {
+  width: 336px;
+  height: 420px;
+  padding: 210px 75px 0 75px;
+}
+
+.item-3 {
+  width: 336px;
+  height: 588px;
+  padding: 100px 75px 0 75px;
+}
+
+.item-3 .thumbnail-text a, .item-4 .thumbnail-text a {
+  font-size: 15px;
+  color: gray;
+}
+
+.item-4 {
+    width: 336px;
+    height: 588px;
+    padding: 75px;
+}
